@@ -1,6 +1,6 @@
 export type Locale = "en" | "fr";
 
-export const SITE_URL = "https://free-word-counter.gentillenoir075.workers.dev";
+export const SITE_URL = "https://free-word-counter.web-free.site";
 
 export const messages = {
   en: {

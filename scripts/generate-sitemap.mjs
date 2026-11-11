@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 
-const SITE = "https://free-word-counter.gentillenoir075.workers.dev";
+const SITE = "https://free-word-counter.web-free.site";
 
 const tools = [
   "character-counter",

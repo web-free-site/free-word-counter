@@ -13,7 +13,7 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://free-word-counter.gentillenoir075.workers.dev"),
+  metadataBase: new URL("https://free-word-counter.web-free.site"),
   icons: { icon: "/favicon.svg" },
 };
 
