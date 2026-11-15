@@ -26,6 +26,8 @@ const tools = [
 
 const legal = ["privacy", "terms", "about", "contact"];
 
+const GUIDE_SLUGS = ["how-to-check-essay-word-count", "how-to-count-characters-for-a-meta-title"];
+
 function url(loc) {
   return `  <url>\n    <loc>${loc}</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>`;
 }
@@ -35,6 +37,7 @@ const urls = [
   url(`${SITE}/fr/`),
   ...tools.flatMap((t) => [url(`${SITE}/${t}/`), url(`${SITE}/fr/${t}/`)]),
   ...legal.flatMap((p) => [url(`${SITE}/${p}/`), url(`${SITE}/fr/${p}/`)]),
+  ...GUIDE_SLUGS.map((t) => url(`${SITE}/${t}/`)),
 ];
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>
