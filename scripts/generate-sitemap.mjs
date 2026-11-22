@@ -26,7 +26,7 @@ const tools = [
 
 const legal = ["privacy", "terms", "about", "contact"];
 
-const GUIDE_SLUGS = ["how-to-check-essay-word-count", "how-to-count-characters-for-a-meta-title"];
+const GUIDE_SLUGS = ["how-to-check-essay-word-count", "how-to-count-characters-for-a-meta-title", "how-to-estimate-speaking-time-for-a-speech"];
 
 function url(loc) {
   return `  <url>\n    <loc>${loc}</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>`;
