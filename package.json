@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev --port 43123",
     "build": "next build",
-    "postbuild": "node scripts/generate-sitemap.mjs && node scripts/inject-more-tools.mjs",
+    "postbuild": "node scripts/generate-sitemap.mjs && node scripts/inject-more-tools.mjs && node scripts/inject-hub-legal.mjs",
     "start": "next start",
     "lint": "next lint",
     "test": "vitest run",
