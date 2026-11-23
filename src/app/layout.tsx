@@ -15,6 +15,8 @@ const fraunces = Fraunces({
 export const metadata: Metadata = {
   metadataBase: new URL("https://free-word-counter.web-free.site"),
   icons: { icon: "/favicon.svg" },
+  openGraph: { images: [{ url: "/og.png", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image", images: ["/og.png"] },
 };
 
 export default function RootLayout({
