@@ -169,11 +169,32 @@ export const HOME_META = {
     description:
       "Free word counter online: words, characters, sentences, paragraphs, reading time, keyword density. No sign-up; text stays on your device.",
     h1: "Free Word Counter",
-    body: `Count words and characters as you write. This free word counter shows live stats: words, characters with and without spaces, sentences, paragraphs, estimated reading and speaking time, and keyword density for SEO drafts. ${sharedEn("Free Word Counter")} Perfect for students in Rwanda and worldwide, bloggers, and anyone who needs a fast, trustworthy counter without uploading manuscripts to a cloud.`,
+    body: "",
     faqs: [
-      { q: "How do you count words?", a: "We split on Unicode letters, numbers, apostrophes, and hyphens so French words like l'école count correctly." },
-      { q: "What reading speed do you use?", a: "About 200 words per minute for reading and 150 for speaking." },
-      { q: "Is Free Word Counter private?", a: "Yes. Everything runs in your browser; we never receive your text." },
+      {
+        q: "How do you count words?",
+        a: "We split on Unicode letters, numbers, apostrophes, and hyphens so contractions and hyphenated terms count as single words when appropriate.",
+      },
+      {
+        q: "What reading and speaking speeds do you use?",
+        a: "Reading time assumes about 200 words per minute; speaking time assumes about 150 words per minute. Both are estimates for planning, not strict limits.",
+      },
+      {
+        q: "Is Free Word Counter private?",
+        a: "Yes. Counting happens entirely in your browser. Your text is not sent to our servers or stored after you close the tab.",
+      },
+      {
+        q: "Do you show characters with and without spaces?",
+        a: "Yes. You get total characters (including spaces) and a separate count without spaces, which is useful for SMS, ads, and some editorial guidelines.",
+      },
+      {
+        q: "Can I use this for school essay limits?",
+        a: "Yes. Paste your essay and compare the word total to your assignment limit. For more detail, see our guide on checking essay word count.",
+      },
+      {
+        q: "Do I need to install software or create an account?",
+        a: "No. The tool is free, works in any modern browser, and requires no sign-up or download.",
+      },
     ],
   },
   fr: {

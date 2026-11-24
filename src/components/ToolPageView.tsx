@@ -2,6 +2,7 @@ import { SiteShell } from "./SiteShell";
 import { WordCounter } from "./WordCounter";
 import { ToolWorkspace } from "./ToolWorkspace";
 import { ContentSection } from "./ContentSection";
+import { HomeEnContent } from "./HomeEnContent";
 import type { Locale } from "@/lib/i18n";
 import { alternateUrls, t } from "@/lib/i18n";
 import { canonicalFor, jsonLdApp, jsonLdBreadcrumb, jsonLdFaq } from "@/lib/seo";
@@ -60,7 +61,11 @@ export function ToolPageView({
         <ToolWorkspace toolId={tool.id} />
       ) : null}
 
-      <ContentSection body={meta.body} faqs={meta.faqs} faqTitle={m.faq} />
+      {isHome && locale === "en" ? (
+        <HomeEnContent faqs={meta.faqs} faqTitle={m.faq} />
+      ) : (
+        <ContentSection body={meta.body} faqs={meta.faqs} faqTitle={m.faq} />
+      )}
 
       <section className="mt-12">
         <h2 className="font-display text-xl text-forest mb-3">{m.related}</h2>
