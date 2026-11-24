@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ToolPageView, buildMetadata } from "@/components/ToolPageView";
+import { buildLegalMetadata } from "@/lib/seo";
 import { getToolBySlug, TOOL_SLUGS } from "@/lib/tools-data";
 
 const LEGAL = ["privacy", "terms", "about", "contact"] as const;
@@ -16,7 +17,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   if ((LEGAL as readonly string[]).includes(slug)) {
-    return { title: `${slug} | Compteur de Mots Gratuit` };
+    return buildLegalMetadata("fr", slug);
   }
   const tool = getToolBySlug(slug);
   if (!tool) return {};
